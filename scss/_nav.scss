@@ -1,3 +1,26 @@
+@import "./variables";
+
 .nav {
-  background-color: #9e4545;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: $primary-color-nav;
+  height: 10vh;
+}
+
+.nav-links {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.list-link {
+  text-decoration: none;
+}
+
+.list-content {
+  font-size: 10rem;
+  display: inline-block;
+  padding: 0 2rem;
 }
