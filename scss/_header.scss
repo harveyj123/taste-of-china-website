@@ -1,8 +1,27 @@
 @import "./variables";
+@import "./mixins";
 
 .header {
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-  height: 50vh;
+  @include flex-centering-row();
+  background-image: url(../img/Wok-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+.header-title-box {
+  margin-bottom: 49rem;
+  @include flex-centering-column();
+}
+
+.header-title-main {
+  text-align: center;
+  color: white;
+  font-size: 14rem;
+}
+
+.header-title-sub {
+  text-align: center;
+  color: white;
+  font-size: 6rem;
 }

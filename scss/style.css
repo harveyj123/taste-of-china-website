@@ -19,17 +19,22 @@ body,
 }
 
 .nav {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 5vh;
   background-color: #9e4545;
-  height: 10vh;
 }
 
 .nav-links {
@@ -43,11 +48,19 @@ body,
 }
 
 .list-link {
+  padding: 0.5rem;
   text-decoration: none;
 }
 
+.list-link:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: white;
+  border: 0.3rem solid #ffffff;
+}
+
 .list-content {
-  font-size: 10rem;
+  font-size: 5rem;
   display: inline-block;
   padding: 0 2rem;
 }
@@ -66,9 +79,48 @@ body,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: black;
-  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../img/Wok-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+.header-title-box {
+  margin-bottom: 49rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-title-main {
+  text-align: center;
+  color: white;
+  font-size: 14rem;
+}
+
+.header-title-sub {
+  text-align: center;
+  color: white;
+  font-size: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
