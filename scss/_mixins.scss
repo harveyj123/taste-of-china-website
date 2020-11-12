@@ -1,3 +1,5 @@
+@import "./variables";
+
 @mixin flex-centering-column {
   display: flex;
   justify-content: center;
@@ -10,4 +12,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+@mixin border {
+  border: 0.3rem solid darkblue;
+}
+
+@mixin gallery-box {
+  text-align: center;
+  color: $primary-text-color;
+  height: 60vh;
+  margin: 2rem;
+  flex: 1;
+  border-radius: 3rem;
+  @include flex-centering-column();
+}
+
+@mixin background-img-cntr {
+  background-size: cover;
+  background-position: center;
 }

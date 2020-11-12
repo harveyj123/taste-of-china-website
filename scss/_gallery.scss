@@ -1,0 +1,47 @@
+@import "./variables";
+@import "./mixins";
+
+.gallery-container {
+  height: 100vh;
+  background: rgb(255, 239, 239);
+  background: linear-gradient(
+    360deg,
+    rgba(255, 239, 239, 1) 0%,
+    rgba(255, 232, 210, 1) 100%
+  );
+  @include flex-centering-column();
+}
+
+.gallery-title {
+  color: $primary-text-color;
+  font-size: 8rem;
+  margin-bottom: 6rem;
+}
+
+.gallery-box-container {
+  width: 100%;
+  @include flex-centering-row();
+}
+
+.gallery-box-1 {
+  @include gallery-box();
+  @include background-img-cntr();
+  background-image: url(../img/general-tso-chichen.png);
+}
+
+.gallery-box-2 {
+  @include gallery-box();
+  @include background-img-cntr();
+  background-image: url(../img/wings.jpg);
+}
+
+.gallery-box-3 {
+  @include gallery-box();
+  @include background-img-cntr();
+  background-image: url(../img/Lomain.jpg);
+}
+
+.gallery-box-title {
+  font-size: 4rem;
+  padding: 2rem;
+}
