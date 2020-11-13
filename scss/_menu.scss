@@ -1,0 +1,40 @@
+@import "./variables";
+@import "./mixins";
+
+.menu {
+  height: 100vh;
+  background-color: $primary-color-section;
+  @include flex-centering-column();
+  max-width: 100%;
+}
+
+.menu-container {
+  @include flex-centering-row();
+  @include border();
+  align-content: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 100%;
+}
+
+.box-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  @include border();
+  font-size: 6rem;
+}
+
+.menu-box {
+  position: relative;
+  margin: 1em;
+  height: 30vh;
+  flex: 1;
+  @include border();
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
