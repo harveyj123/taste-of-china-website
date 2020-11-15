@@ -2,6 +2,7 @@
 @import "./mixins";
 
 .nav {
+  z-index: 2;
   position: fixed;
   @include flex-centering-row();
   height: 5vh;

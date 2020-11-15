@@ -2,12 +2,37 @@
 @import "./mixins";
 
 .popup {
+  visibility: hidden;
+}
+
+.popup:target {
   height: 80vh;
   width: 80%;
+  position: fixed;
+  align-content: flex-start;
+  justify-content: center;
+  background-color: $primary-color;
+  visibility: visible;
+}
+
+.close {
+  position: relative;
+  display: block;
+}
+
+.close::after {
+  right: -1rem;
+  top: -1rem;
+  width: 3.2rem;
+  height: 3.2rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: black;
+  font-size: 3rem;
+  @include flex-centering-row();
+  align-content: center;
+  content: "x";
+  cursor: pointer;
   background-color: white;
-  opacity: 0;
+  border-radius: 50%;
 }
