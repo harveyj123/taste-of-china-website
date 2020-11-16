@@ -2,7 +2,8 @@
 @import "./mixins";
 
 .nav {
-  z-index: 2;
+  text-align: center;
+  z-index: 10;
   position: fixed;
   @include flex-centering-row();
   height: 5vh;
@@ -24,11 +25,12 @@
 .list-link:hover,
 .list-link:active {
   transition: 0.3s ease;
-  border: 0.3rem solid #ffffff;
+  background-color: $primary-color;
 }
 
 .list-content {
   font-size: 5rem;
   display: inline-block;
   padding: 0 2rem;
+  overflow-y: hidden;
 }
