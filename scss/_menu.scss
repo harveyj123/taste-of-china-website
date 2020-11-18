@@ -2,20 +2,24 @@
 @import "./mixins";
 @import "./menu-popup";
 
-.menu {
+#menu {
   height: 100vh;
   background-color: $primary-color-section;
   @include flex-centering-column();
-  max-width: 100%;
+  width: 100vw;
+  position: relative;
+  @include border();
 }
 
 .menu-container {
+  padding: 2rem;
   @include flex-centering-row();
   position: relative;
   align-content: center;
   flex-wrap: wrap;
   height: 82vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .box-title {
@@ -23,13 +27,14 @@
   position: absolute;
   bottom: 0;
   text-align: center;
-  @include border();
+
   background-color: $secondary-text-color;
   color: white;
   font-size: 4rem;
 }
 
 .menu-box {
+  overflow: hidden;
   position: relative;
   margin: 5em;
   height: 38vh;

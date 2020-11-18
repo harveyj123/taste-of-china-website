@@ -1,13 +1,67 @@
 @import "./variables";
 @import "./mixins";
 
-.popup {
-  height: 80vh;
-  width: 80%;
+.popup-title {
+  text-align: center;
+  font-size: 6rem;
+}
+
+.popup-text {
+  font-size: 5rem;
+}
+
+.popup-content-container {
   position: absolute;
+  padding: 3rem;
+  overflow: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  width: 75%;
+  height: 75%;
+  background-color: $primary-color;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
   opacity: 0;
+  background-color: black;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.close {
+  font-size: 3rem;
+  width: 4rem;
+  border-radius: 50%;
+  height: 4rem;
+  z-index: 2000;
+  top: 1rem;
+  right: 2.5rem;
+  position: absolute;
+  cursor: pointer;
+  overflow-y: hidden;
+}
+
+.close::after {
+  width: 4rem;
+  height: 4rem;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: black;
+  border-radius: 50%;
+  content: "x";
+  background-color: white;
 }
