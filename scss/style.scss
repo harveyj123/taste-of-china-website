@@ -3,6 +3,7 @@
 @import "./nav";
 @import "./header";
 @import "./gallery";
+@import "./locations";
 
 html,
 body,
@@ -13,4 +14,3 @@ body,
   font-size: 62.5%;
   overflow-x: hidden;
 }
-@import "./locations";
