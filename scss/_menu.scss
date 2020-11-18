@@ -27,7 +27,7 @@
   position: absolute;
   bottom: 0;
   text-align: center;
-  @include border();
+
   background-color: $secondary-text-color;
   color: white;
   font-size: 4rem;
@@ -75,9 +75,4 @@
 .box-5 {
   @include background-img-cntr();
   background-image: url(../img/menu-specials.jpg);
-}
-
-.locations {
-  height: 100vh;
-  background-color: black;
 }
