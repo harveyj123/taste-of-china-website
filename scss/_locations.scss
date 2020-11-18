@@ -1,0 +1,13 @@
+@import "./mixins";
+@import "./variables";
+
+.locations{
+    @include flex-centering-column();
+    height: 100vh;
+    background-color: pink;
+    width: 100%;
+}
+.location-container{
+    height: 80vh;
+    width: 100%;
+}
