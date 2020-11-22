@@ -23,7 +23,8 @@
 }
 
 .list-link:hover,
-.list-link:active {
+.list-link:active,
+.list-link:focus {
   transition: 0.3s ease;
   background-color: $primary-color;
 }

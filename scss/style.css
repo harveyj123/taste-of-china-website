@@ -223,7 +223,8 @@
 }
 
 .list-link:hover,
-.list-link:active {
+.list-link:active,
+.list-link:focus {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   background-color: #ffc107;
@@ -237,6 +238,7 @@
 }
 
 .header {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,33 +331,6 @@
           flex-direction: row;
 }
 
-.gallery-box-1 {
-  text-align: center;
-  color: #ffffff;
-  height: 60vh;
-  margin: 2rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border-radius: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../img/general-tso-chichen.png);
-}
-
 .gallery-box-2 {
   text-align: center;
   color: #ffffff;
@@ -411,8 +386,70 @@
 }
 
 .gallery-box-title {
+  width: 100%;
+  color: white;
+  background-color: #b56262;
   font-size: 4rem;
   padding: 2rem;
+}
+
+.box {
+  height: 60vh;
+  width: 33vw;
+  background-color: green;
+}
+
+.gallery-box {
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform-style: preserve-3d !important;
+          transform-style: preserve-3d !important;
+  width: 100%;
+  height: 100%;
+}
+
+.box:hover .gallery-box {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.gallery-box-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: black;
+}
+
+.gallery-box-1-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: blue;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 
 html,
@@ -423,6 +460,5 @@ body,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
