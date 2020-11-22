@@ -2,6 +2,7 @@
 @import "./mixins";
 
 .header {
+  overflow-x: hidden;
   @include flex-centering-row();
   background-image: url(../img/Wok-img.jpg);
   background-size: cover;

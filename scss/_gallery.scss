@@ -25,12 +25,6 @@
   @include flex-centering-row();
 }
 
-.gallery-box-1 {
-  @include gallery-box();
-  @include background-img-cntr();
-  background-image: url(../img/general-tso-chichen.png);
-}
-
 .gallery-box-2 {
   @include gallery-box();
   @include background-img-cntr();
@@ -44,6 +38,44 @@
 }
 
 .gallery-box-title {
+  width: 100%;
+  color: white;
+  background-color: $primary-color-section;
   font-size: 4rem;
   padding: 2rem;
+}
+
+.box {
+  height: 60vh;
+  width: 33vw;
+  background-color: green;
+}
+
+.gallery-box {
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d !important;
+  width: 100%;
+  height: 100%;
+}
+
+.box:hover .gallery-box {
+  transform: rotateY(180deg);
+}
+
+.gallery-box-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-color: black;
+}
+
+.gallery-box-1-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-color: blue;
+  transform: rotateY(180deg);
 }
