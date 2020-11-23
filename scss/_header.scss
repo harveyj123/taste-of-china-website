@@ -12,20 +12,33 @@
 }
 
 .header-title-box {
-  margin-bottom: 43rem;
+  border-radius: 1rem;
+  height: 28vh;
+  margin-bottom: 40rem;
   @include flex-centering-column();
+  background-color: $primary-color-section;
 }
 
 .header-title-main {
+  background-color: $primary-color-section;
   text-align: center;
   color: white;
-  font-size: 14rem;
+  font-size: 12rem;
+  padding: 1.5rem;
 }
 
 .header-title-sub {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(204, 125, 125, 1) 0%
+  );
   text-align: center;
   color: white;
-  font-size: 6rem;
+  font-size: 5rem;
+  padding: 1.2rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1070px) {
