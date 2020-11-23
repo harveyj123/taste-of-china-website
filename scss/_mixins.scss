@@ -21,8 +21,7 @@
 @mixin gallery-box {
   text-align: center;
   color: $primary-text-color;
-  height: 60vh;
-  margin: 2rem;
+  height: 100%;
   flex: 1;
   border-radius: 3rem;
   @include flex-centering-column();

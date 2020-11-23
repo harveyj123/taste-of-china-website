@@ -12,7 +12,7 @@
 }
 
 .header-title-box {
-  margin-bottom: 49rem;
+  margin-bottom: 43rem;
   @include flex-centering-column();
 }
 
@@ -26,4 +26,13 @@
   text-align: center;
   color: white;
   font-size: 6rem;
+}
+
+@media only screen and (max-width: 1070px) {
+  .header-title-main {
+    font-size: 10rem;
+  }
+  .header-title-sub {
+    font-size: 4rem;
+  }
 }
