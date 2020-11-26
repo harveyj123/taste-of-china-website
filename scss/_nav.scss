@@ -1,6 +1,10 @@
 @import "./variables";
 @import "./mixins";
 
+.navigation-checkbox {
+  display: none;
+}
+
 .nav {
   text-align: center;
   z-index: 10;
@@ -22,24 +26,115 @@
   padding: 1rem;
   text-decoration: none;
   color: white;
+  height: 100%;
+  width: 100%;
 }
 
-.list-link:hover,
-.list-link:active,
-.list-link:focus {
+.list-content:hover,
+.list-content:active,
+.list-content:focus {
   transition: 0.3s ease;
   background-color: $primary-color;
 }
 
 .list-content {
+  height: 100%;
   font-size: 5rem;
-  display: inline-block;
-  padding: 0 2rem;
+  display: block;
+  padding: 1rem;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 1070px) {
   .list-content {
     font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navigation-checkbox {
+    display: none;
+  }
+
+  .navigation-button {
+    background-color: white;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 15;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .navigation-icon {
+    position: relative;
+    margin-top: 50%;
+  }
+
+  .navigation-icon::before {
+    content: "";
+    position: absolute;
+    top: -0.8rem;
+    left: 0;
+  }
+
+  .navigation-icon::after {
+    content: "";
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+  }
+
+  .navigation-icon,
+  .navigation-icon::before,
+  .navigation-icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: $primary-color-text;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  .navigation-button:hover .navigation-icon::before {
+    top: -1rem;
+  }
+  .navigation-button:hover .navigation-icon::after {
+    top: 1rem;
+  }
+
+  .navigation-checkbox:checked + .navigation-button .navigation-icon {
+    background-color: transparent;
+  }
+
+  .navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  .navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
+
+  .nav {
+    height: 100vh;
+    width: 50%;
+    opacity: 0;
+    @include flex-centering-row();
+    top: 0;
+    right: 100%;
+    transition: all 1s;
+  }
+
+  .nav-links {
+    @include flex-centering-column();
+  }
+
+  .navigation-checkbox:checked ~ .nav {
+    opacity: 1;
+    right: 50%;
   }
 }
