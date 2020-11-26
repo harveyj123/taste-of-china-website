@@ -361,7 +361,6 @@
 }
 
 .header {
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,8 +382,9 @@
 }
 
 .header-title-box {
-  border-radius: 1rem;
+  border-radius: 2rem;
   height: 28vh;
+  width: 80%;
   margin-bottom: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,6 +403,8 @@
 }
 
 .header-title-main {
+  border-radius: 2rem;
+  width: 100%;
   background-color: #b56262;
   text-align: center;
   color: white;
@@ -411,6 +413,7 @@
 }
 
 .header-title-sub {
+  border-radius: 2rem;
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(0%, #cc7d7d));
   background: linear-gradient(0deg, white 0%, #cc7d7d 0%);
@@ -423,10 +426,28 @@
 
 @media only screen and (max-width: 1070px) {
   .header-title-main {
-    font-size: 10rem;
+    font-size: 9rem;
   }
   .header-title-sub {
     font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-title-main {
+    font-size: 7rem;
+  }
+  .header-title-sub {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .header-title-main {
+    font-size: 5rem;
+  }
+  .header-title-sub {
+    font-size: 2rem;
   }
 }
 

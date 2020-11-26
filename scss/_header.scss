@@ -2,7 +2,6 @@
 @import "./mixins";
 
 .header {
-  overflow-x: hidden;
   @include flex-centering-row();
   background-image: url(../img/Wok-img.jpg);
   background-size: cover;
@@ -12,14 +11,17 @@
 }
 
 .header-title-box {
-  border-radius: 1rem;
+  border-radius: 2rem;
   height: 28vh;
+  width: 80%;
   margin-bottom: 40rem;
   @include flex-centering-column();
   background-color: $primary-color-section;
 }
 
 .header-title-main {
+  border-radius: 2rem;
+  width: 100%;
   background-color: $primary-color-section;
   text-align: center;
   color: white;
@@ -28,6 +30,7 @@
 }
 
 .header-title-sub {
+  border-radius: 2rem;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -43,9 +46,27 @@
 
 @media only screen and (max-width: 1070px) {
   .header-title-main {
-    font-size: 10rem;
+    font-size: 9rem;
   }
   .header-title-sub {
     font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-title-main {
+    font-size: 7rem;
+  }
+  .header-title-sub {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .header-title-main {
+    font-size: 5rem;
+  }
+  .header-title-sub {
+    font-size: 2rem;
   }
 }
