@@ -15,6 +15,7 @@
 }
 
 .gallery-title {
+  color: $primary-text-color-light;
   background: $primary-color-section;
   text-align: center;
   @include flex-centering-column;
