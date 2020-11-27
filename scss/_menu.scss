@@ -16,7 +16,7 @@
   position: relative;
   align-content: center;
   flex-wrap: wrap;
-  height: 82vh;
+  height: 82%;
   width: 100%;
   overflow: hidden;
 }
@@ -46,12 +46,8 @@
 }
 
 .menu-title {
-  background: rgb(255, 239, 239);
-  background: linear-gradient(
-    360deg,
-    rgba(255, 239, 239, 1) 0%,
-    rgba(255, 232, 210, 1) 100%
-  );
+  background-color: $primary-color;
+
   height: 10vh;
   @include flex-centering-column();
   font-size: 5rem;
@@ -82,4 +78,25 @@
 .box-5 {
   @include background-img-cntr();
   background-image: url(../img/menu-specials.jpg);
+}
+
+@media only screen and (max-width: 800px) {
+  #menu {
+    height: 200vh;
+  }
+
+  .break {
+    flex-basis: 0%;
+    height: 0;
+  }
+
+  .menu-container {
+    flex-direction: column;
+  }
+
+  .menu-box {
+    margin: 1.5rem 0;
+    flex-direction: row;
+    width: 100%;
+  }
 }

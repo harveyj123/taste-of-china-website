@@ -17,7 +17,7 @@
           transform: translate(-50%, -50%);
   width: 75%;
   height: 75%;
-  background-color: #ffc107;
+  background-color: #ffe8d2;
 }
 
 .popup {
@@ -105,7 +105,7 @@
       align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 82vh;
+  height: 82%;
   width: 100%;
   overflow: hidden;
 }
@@ -138,9 +138,7 @@
 }
 
 .menu-title {
-  background: #ffefef;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffefef), to(#ffe8d2));
-  background: linear-gradient(360deg, #ffefef 0%, #ffe8d2 100%);
+  background-color: #ffe8d2;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +186,31 @@
   background-size: cover;
   background-position: center;
   background-image: url(../img/menu-specials.jpg);
+}
+
+@media only screen and (max-width: 800px) {
+  #menu {
+    height: 200vh;
+  }
+  .break {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+    height: 0;
+  }
+  .menu-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-box {
+    margin: 1.5rem 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
 }
 
 .navigation-checkbox {
