@@ -190,7 +190,7 @@
 
 @media only screen and (max-width: 800px) {
   #menu {
-    height: 200vh;
+    height: 280vh;
   }
   .break {
     -ms-flex-preferred-size: 0%;
@@ -359,8 +359,8 @@
             flex-direction: row;
     top: 0;
     right: 100%;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
   }
   .nav-links {
     display: -webkit-box;
@@ -380,6 +380,24 @@
   .navigation-checkbox:checked ~ .nav {
     opacity: 1;
     right: 50%;
+  }
+  .list-content {
+    height: 8vh;
+    width: 100%;
+    margin: 1rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
