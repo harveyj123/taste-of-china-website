@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
     <title>Chinese resturant</title>
+<<<<<<< HEAD
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.777319544039!2d-74.02540818461442!3d40.634792579340385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24551273f6db9%3A0xae56e931c10ee77e!2sTaste%20of%20China!5e0!3m2!1sen!2sus!4v1606686489969!5m2!1sen!2sus" 
         width="600" 
         height="450"
@@ -15,12 +16,27 @@
     </iframe>
     </script>
     <nav class="nav">
+=======
+</head>
+<body>
+    <nav>
+        <input type="checkbox" class="navigation-checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation-button" >
+            <span class="navigation-icon"></span>
+        </label>
+     
+
+        <div class="nav">
+>>>>>>> test
         <ul class="nav-links">
             <li class="list-content">
                 <a class="list-link" href="#">Home</a>
             </li>
             <li class="list-content">
-                <a class="list-link" href="#">Menu</a>
+                <a class="list-link" href="#gallery-container">Our favorites</a>
+            </li>
+            <li class="list-content">
+                <a class="list-link" href="#menu">Menu</a>
             </li>
             <li class="list-content">
                 <a class="list-link"  href="#">Location</a>
@@ -32,31 +48,70 @@
                 <a class="list-link" href="#">Our story</a>
             </li>
         </ul>
+    </div>
+
     </nav>
-    <header class="header">
-        <h1 class="header-title-box">
+
+    <header class="header"> 
+        <h1 class="header-title-box" tabindex="0">
             <div class="header-title-main">Taste of China</div>
             <div class="header-title-sub">chinese american cursine</div>
         </h1>
     </header>
-    <section class="gallery-container">
+    
+
+    <section id="gallery-container">
+        
         <div class="gallery-title-box">
             <h1 class="gallery-title">Try our favorites</h1>
-        </div>
+        </div> 
+
         <div class=gallery-box-container>
-            <span class="gallery-box-1">
-                <h1 class="gallery-box-title">General tso chichen</h1>
-            </span>
-            <span class="gallery-box-2">
-                <h1 class="gallery-box-title">Fried chicken</h1>
-            </span>
-            <span class="gallery-box-3">
-                <h1 class="gallery-box-title">Lo mein</h1>
-            </span>
+           
+     
+            <div class="box" tabindex="0">
+                <div class="gallery-box" tabindex="0">
+                    <figure class="gallery-box-1">
+                        <figcaption class="gallery-box-title">General tso chichen</figcaption>
+                    </figure>
+                    <figure class="gallery-box-1-back">
+                        <h1 class="back-title">Hi</h1>
+                        <p class="back-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate aliquid rem omnis temporibus, molestias nulla nisi perferendis tempora recusandae eos esse culpa, ut autem repudiandae voluptatem ipsum totam aperiam?</p>
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="box" tabindex="0">
+                <div class="gallery-box" tabindex="0">
+                    <figure class="gallery-box-2">
+                        <figcaption class="gallery-box-title">Fried Chicken</figcaption>
+                    </figure>
+                    <figure class="gallery-box-2-back">
+                        <h1 class="back-title">Hi</h1>
+                        <p class="back-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate aliquid rem omnis temporibus, molestias nulla nisi perferendis tempora recusandae eos esse culpa, ut autem repudiandae voluptatem ipsum totam aperiam?</p>
+                    </figure>
+                </div>
+            </div>
+           
+            <div class="box" tabindex="0">
+                <div class="gallery-box" tabindex="0">
+                    <figure class="gallery-box-3">
+                        <figcaption class="gallery-box-title">Fried Chicken</figcaption>
+                    </figure>
+                    <figure class="gallery-box-3-back">
+                        <h1 class="back-title">Hi</h1>
+                        <p class="back-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate aliquid rem omnis temporibus, molestias nulla nisi perferendis tempora recusandae eos esse culpa, ut autem repudiandae voluptatem ipsum totam aperiam?</p>
+                    </figure>
+                </div>
+            </div>
+        
         </div>
     </section>
-    <section id="menu">
 
+
+    <section id="menu">
+        <h1 class="menu-title" tabindex="0">Menu</h1>
         <div id="popup-content-1" class="popup">
             <a href="#menu" class="close"></a>
             <div class="popup-content-container">
@@ -102,9 +157,8 @@
             </p>
              </div>
         </div>
-        <h1 class="menu-title">Menu</h1>
+   
         <div class="menu-container">
-            
             <div class="menu-box box-1">
                 <a href="#popup-content-1">
                     <div class="menu-box"></div>
@@ -142,14 +196,17 @@
                 <h1 class="box-title">specials</h1>
             </div>
         </div>
+    </section>
 
     <section class="locations">
     <div class="location-container">
         <h1 class="location-title">Locations</h1>  
     </div>
     </section>
+    
     <section class="contact-us"></section>
     <section class="about-us"></section>
     <footer class="footer"></footer>
+    
 </body>
 </html>
