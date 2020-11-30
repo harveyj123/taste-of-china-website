@@ -11,12 +11,9 @@
 }
 
 .popup-content-container {
-  position: absolute;
   padding: 3rem;
   overflow: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include abs-pos-centering();
   width: 75%;
   height: 75%;
   background-color: $primary-color;
@@ -31,7 +28,7 @@
   z-index: 999;
   visibility: hidden;
   opacity: 0;
-  background-color: black;
+  background-color: $primary-color-text;
 }
 
 .popup:target {
@@ -55,13 +52,12 @@
 .close::after {
   width: 4rem;
   height: 4rem;
-  top: 50%;
-  left: 50%;
+  @include abs-pos-centering();
   text-align: center;
-  transform: translate(-50%, -50%);
+
   position: absolute;
   color: black;
   border-radius: 50%;
   content: "x";
-  background-color: white;
+  background-color: $primary-text-color-light;
 }
