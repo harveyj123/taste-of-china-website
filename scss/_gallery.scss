@@ -1,3 +1,4 @@
+@import "./gallery-hover-effect";
 @import "./variables";
 @import "./mixins";
 
@@ -9,16 +10,29 @@
   position: relative;
 }
 
+.gallery-title-box {
+  @include flex-centering-row();
+  height: 20vh;
+  width: 100%;
+}
+
 .gallery-title {
+  @include flex-centering-column();
+  height: 80%;
   color: $primary-text-color-light;
   background: $primary-color-section;
   text-align: center;
-  @include flex-centering-row;
   font-size: 8rem;
-  height: 16vh;
-  margin: 5rem;
   padding: 1rem;
   border-radius: 2rem;
+}
+
+.gallery-box-container {
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+  @include flex-centering-row();
+  justify-content: space-evenly;
 }
 
 .gallery-box-title {
@@ -27,111 +41,6 @@
   background-color: $primary-color-section;
   font-size: 4rem;
   padding: 2rem;
-}
-
-.gallery-box-container {
-  padding: 2rem;
-  flex: 1;
-  height: 100vh;
-  width: 100vw;
-  @include flex-centering-row();
-  justify-content: space-evenly;
-}
-
-.box {
-  height: 80%;
-  width: 25vw;
-  border-radius: 3rem;
-}
-
-.gallery-box {
-  border-radius: 3rem;
-  position: relative;
-  transition: all 1s;
-  transform-style: preserve-3d;
-  width: 100%;
-  height: 100%;
-}
-
-.box:hover .gallery-box {
-  transform: rotateY(180deg);
-}
-
-.box:focus .gallery-box {
-  transform: rotateY(180deg);
-}
-
-.back-title {
-  font-size: 4rem;
-}
-
-.back-content {
-  padding: 1.3rem;
-  font-size: 2rem;
-}
-
-.gallery-box-1 {
-  @include gallery-box();
-  @include background-img-cntr();
-  background-image: url(../img/general-tso-chichen.png);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-}
-
-.gallery-box-1-back {
-  position: absolute;
-  border-radius: 3rem;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  background-color: $primary-text-color-light;
-  transform: rotateY(180deg);
-  @include flex-centering-column();
-}
-
-.gallery-box-2 {
-  @include gallery-box();
-  @include background-img-cntr();
-  background-image: url(../img/wings.jpg);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-}
-
-.gallery-box-2-back {
-  border-radius: 3rem;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  background-color: white;
-  transform: rotateY(180deg);
-  @include flex-centering-column();
-}
-
-.gallery-box-3 {
-  @include gallery-box();
-  @include background-img-cntr();
-  background-image: url(../img/Lomain.jpg);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  background-color: black;
-}
-
-.gallery-box-3-back {
-  border-radius: 3rem;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  background-color: white;
-  transform: rotateY(180deg);
-  @include flex-centering-column();
 }
 
 @media only screen and (max-width: 800px) {
@@ -159,7 +68,7 @@
   }
 
   .box {
-    width: 100%;
+    width: 80%;
     margin: 3rem;
     flex-direction: row;
   }

@@ -25,6 +25,10 @@
   flex: 1;
   border-radius: 3rem;
   @include flex-centering-column();
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
 }
 
 @mixin background-img-cntr {

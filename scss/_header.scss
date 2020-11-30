@@ -2,19 +2,20 @@
 @import "./mixins";
 
 .header {
+  position: relative;
   @include flex-centering-row();
   background-image: url(../img/Wok-img.jpg);
-  background-size: cover;
-  background-position: center;
+  @include background-img-cntr();
   height: 95vh;
   width: 100vw;
 }
 
 .header-title-box {
+  top: 17%;
+  position: absolute;
   border-radius: 2rem;
   height: 28vh;
   width: 80%;
-  margin-bottom: 40rem;
   @include flex-centering-column();
   background-color: $primary-color-section;
 }
