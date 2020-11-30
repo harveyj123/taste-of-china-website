@@ -277,7 +277,7 @@
 
 .list-link {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -323,7 +323,7 @@
     display: none;
   }
   .navigation-button {
-    background-color: white;
+    background-color: #ffffff;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
