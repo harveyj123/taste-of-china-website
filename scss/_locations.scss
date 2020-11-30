@@ -2,31 +2,38 @@
 @import "./variables";
 
 .locations {
-  @include border();
   @include flex-centering-column();
-  background-color: $primary-color-section;
+  background-color: $primary-color;
   height: 100vh;
   width: 100vw;
 }
 
 .location-title-container {
   @include flex-centering-row();
-  height: 20%;
+  height: 15%;
+  width: 100%;
 }
 
 .location-title {
+  border-radius: 1rem;
+  @include flex-centering-row();
+  height: 90%;
+  background-color: $primary-color-section;
+  width: 80%;
   font-size: 7rem;
   color: $primary-text-color-light;
 }
 
 .location-container {
   @include flex-centering-row();
+  justify-content: space-evenly;
   height: 80%;
   width: 90%;
 }
 
 .location-map {
-  height: 100%;
+  margin: 1rem;
+  height: 80%;
   width: 50%;
 }
 
@@ -36,11 +43,37 @@
 
 .location-content {
   @include flex-centering-row();
-  height: 100%;
+  height: 80%;
   width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: $primary-color-section;
 }
 
 .location-content-title {
   font-size: 5rem;
   color: $primary-text-color-light;
+}
+
+@media only screen and (max-width: 800px) {
+  .location-container {
+    flex-direction: column;
+  }
+
+  .location-content {
+    margin: 3rem;
+    order: -1;
+    width: 90%;
+    height: 25%;
+  }
+
+  .location-map {
+    height: 75%;
+    width: 90%;
+  }
+
+  .location-title {
+    font-size: 5rem;
+  }
 }
