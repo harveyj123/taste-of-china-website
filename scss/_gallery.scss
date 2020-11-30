@@ -11,12 +11,14 @@
 }
 
 .gallery-title-box {
-  @include flex-centering-column;
+  @include flex-centering-row();
   height: 20vh;
   width: 100%;
 }
 
 .gallery-title {
+  @include flex-centering-column();
+  height: 80%;
   color: $primary-text-color-light;
   background: $primary-color-section;
   text-align: center;
@@ -42,10 +44,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .box:focus .gallery-box {
-    outline: none;
-  }
-
   .gallery-title {
     margin: 3rem;
     font-size: 6rem;
@@ -70,7 +68,7 @@
   }
 
   .box {
-    width: 100%;
+    width: 80%;
     margin: 3rem;
     flex-direction: row;
   }
