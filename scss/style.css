@@ -65,7 +65,7 @@
   background-color: white;
 }
 
-.menu {
+#menu {
   height: 100vh;
   background-color: #b56262;
   display: -webkit-box;
@@ -829,6 +829,11 @@
   width: 100vw;
 }
 
+.location-container {
+  height: 50%;
+  width: 50%;
+}
+
 html,
 body,
 * {
@@ -837,5 +842,6 @@ body,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
