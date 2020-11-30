@@ -22,7 +22,7 @@
 
 .list-link {
   text-decoration: none;
-  color: white;
+  color: $primary-text-color-light;
   height: 100%;
   width: 100%;
   @include flex-centering-column();
@@ -56,7 +56,7 @@
   }
 
   .navigation-button {
-    background-color: white;
+    background-color: $primary-text-color-light;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
