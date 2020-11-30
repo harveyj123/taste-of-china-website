@@ -2,7 +2,7 @@
 @import "./mixins";
 @import "./menu-popup";
 
-.menu {
+#menu {
   height: 100vh;
   background-color: $primary-color-section;
   @include flex-centering-column();
