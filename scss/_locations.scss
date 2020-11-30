@@ -3,11 +3,43 @@
 
 .locations {
   @include flex-centering-column();
+  background-color: $primary-color-section;
   height: 100vh;
   width: 100vw;
 }
 
+.location-title-container {
+  @include flex-centering-row();
+  height: 20%;
+}
+
+.location-title {
+  font-size: 7rem;
+  color: $primary-text-color-light;
+}
+
 .location-container {
-  height: 50%;
+  @include flex-centering-row();
+  height: 80%;
+  width: 90%;
+}
+
+.location-map {
+  height: 100%;
   width: 50%;
+}
+
+#location-map {
+  border-radius: 2rem;
+}
+
+.location-content {
+  @include flex-centering-row();
+  height: 100%;
+  width: 50%;
+}
+
+.location-content-title {
+  font-size: 5rem;
+  color: $primary-text-color-light;
 }
