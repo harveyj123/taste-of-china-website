@@ -812,6 +812,7 @@
 }
 
 .locations {
+  border: 0.3rem solid lightblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
