@@ -38,6 +38,7 @@
   margin: 1rem;
   height: 38vh;
   flex: 1;
+  border-radius: 1rem;
 }
 
 .break {
@@ -45,13 +46,18 @@
   height: 0;
 }
 
+.menu-title-container {
+  @include flex-centering-row();
+  height: 10vh;
+  width: 100%;
+}
+
 .menu-title {
   background-color: $primary-color;
-
-  height: 10vh;
   @include flex-centering-column();
   font-size: 5rem;
-  width: 70%;
+  width: 80%;
+  height: 100%;
   border-radius: 1rem;
 }
 
@@ -95,8 +101,8 @@
   }
 
   .menu-box {
-    margin: 1.5rem 0;
+    margin: 1.5rem;
     flex-direction: row;
-    width: 100%;
+    width: 85%;
   }
 }
