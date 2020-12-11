@@ -87,7 +87,6 @@
 }
 
 .menu-container {
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +105,6 @@
       flex-wrap: wrap;
   height: 82%;
   width: 100%;
-  overflow: hidden;
 }
 
 .box-title {
@@ -216,18 +214,25 @@
     height: 0;
   }
   .menu-container {
+    height: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .menu-box {
-    margin: 1.5rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     width: 85%;
+  }
+  .menu-title-container {
+    height: 20vh;
+    margin: 1.5rem;
+  }
+  .menu-title {
+    height: 60%;
   }
 }
 
@@ -461,7 +466,7 @@
   width: 100vw;
 }
 
-.header-title-box {
+.header-title-container {
   top: 17%;
   position: absolute;
   border-radius: 2rem;
@@ -703,7 +708,7 @@
   position: relative;
 }
 
-.gallery-title-box {
+.gallery-title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

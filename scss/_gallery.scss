@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.gallery-title-box {
+.gallery-title-container {
   @include flex-centering-row();
   height: 20vh;
   width: 100%;

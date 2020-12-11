@@ -11,13 +11,11 @@
 }
 
 .menu-container {
-  padding: 2rem;
   @include flex-centering-row();
   position: relative;
   flex-wrap: wrap;
   height: 82%;
   width: 100%;
-  overflow: hidden;
 }
 
 .box-title {
@@ -96,12 +94,21 @@
   }
 
   .menu-container {
+    height: 90%;
     flex-direction: column;
   }
 
   .menu-box {
-    margin: 1.5rem;
     flex-direction: row;
     width: 85%;
+  }
+
+  .menu-title-container {
+    height: 20vh;
+    margin: 1.5rem;
+  }
+
+  .menu-title {
+    height: 60%;
   }
 }
