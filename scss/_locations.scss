@@ -1,7 +1,7 @@
 @import "./mixins";
 @import "./variables";
 
-.locations {
+#locations {
   @include flex-centering-column();
   background-color: $primary-color;
   height: 100vh;

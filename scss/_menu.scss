@@ -11,14 +11,11 @@
 }
 
 .menu-container {
-  padding: 2rem;
   @include flex-centering-row();
   position: relative;
-  align-content: center;
   flex-wrap: wrap;
   height: 82%;
   width: 100%;
-  overflow: hidden;
 }
 
 .box-title {
@@ -27,13 +24,13 @@
   bottom: 0;
   text-align: center;
   background-color: $secondary-text-color;
-  color: white;
+  color: $primary-text-color-light;
   padding: 0.5rem;
   font-size: 3rem;
 }
 
-.menu-box {
-  overflow: hidden;
+.menu-box,
+.menu-box:focus {
   position: relative;
   margin: 1rem;
   height: 38vh;
@@ -63,12 +60,12 @@
 
 .box-1 {
   @include background-img-cntr();
-  background-image: url(../img/ch-w-br.jpg);
+  background-image: url(../img/lunch-special-2.jpg);
 }
 
 .box-2 {
   @include background-img-cntr();
-  background-image: url(../img/combo-platter.jpg);
+  background-image: url(../img/combo-platter-3.jpg);
 }
 
 .box-3 {
@@ -97,12 +94,21 @@
   }
 
   .menu-container {
+    height: 90%;
     flex-direction: column;
   }
 
   .menu-box {
-    margin: 1.5rem;
     flex-direction: row;
     width: 85%;
+  }
+
+  .menu-title-container {
+    height: 20vh;
+    margin: 1.5rem;
+  }
+
+  .menu-title {
+    height: 60%;
   }
 }
