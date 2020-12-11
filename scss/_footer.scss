@@ -1,17 +1,52 @@
-.footer {
+.contact-and-about-us-container {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
+  @include flex-centering-row();
 }
 
-.footer::before {
+.contact-and-about-us-container::before {
   content: "";
   @include abs-pos-centering();
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url(../img/footer-img-3.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.9;
+  background-image: url(../img/info-background.jpg);
+  @include background-img-cntr();
+  opacity: 0.6;
+}
+
+.contact-and-about-us-inner-container {
+  @include flex-centering-column();
+  width: 90%;
+  height: 80%;
+}
+
+.contact-us {
+  background-color: $primary-color-section;
+  @include flex-centering-column();
+  margin: 1rem;
+  width: 80%;
+  height: 50%;
+  @include border();
+}
+
+.contact-us-title {
+  width: 100%;
+  @include flex-centering-row();
+  font-size: 5rem;
+  margin: 2rem;
+}
+.contact-us-content {
+  width: 100%;
+
+  font-size: 3rem;
+  @include flex-centering-row();
+}
+
+.about-us {
+  margin: 1rem;
+  width: 80%;
+  height: 50%;
+  @include border();
 }

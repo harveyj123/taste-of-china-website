@@ -23,7 +23,7 @@
   background: $primary-color-section;
   text-align: center;
   font-size: 8rem;
-  padding: 1rem;
+  width: 70%;
   border-radius: 2rem;
 }
 
@@ -43,15 +43,11 @@
   padding: 2rem;
 }
 
-.a {
-  width: 100%;
-  height: 100%;
-}
-
 @media only screen and (max-width: 800px) {
   .gallery-title {
-    margin: 3rem;
-    font-size: 6rem;
+    padding: 0.2rem;
+    font-size: 5.3rem;
+    width: 80%;
   }
   .back-title {
     font-size: 3rem;
