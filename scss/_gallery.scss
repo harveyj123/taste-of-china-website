@@ -44,6 +44,24 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .gallery-box-1 {
+    @include gallery-box();
+    @include background-img-cntr();
+    background-image: url(../img/general-tso-chichen-m.jpg);
+  }
+
+  .gallery-box-2 {
+    @include gallery-box();
+    @include background-img-cntr();
+    background-image: url(../img/chickenwings-m.jpg);
+  }
+
+  .gallery-box-3 {
+    @include gallery-box();
+    @include background-img-cntr();
+    background-image: url(../img/lomain-m.jpg);
+  }
+
   .gallery-title {
     padding: 0.2rem;
     font-size: 5.3rem;

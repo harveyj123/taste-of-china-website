@@ -60,12 +60,12 @@
 
 .box-1 {
   @include background-img-cntr();
-  background-image: url(../img/lunch-special-2.jpg);
+  background-image: url(../img/lunch-special.jpg);
 }
 
 .box-2 {
   @include background-img-cntr();
-  background-image: url(../img/combo-platter-3.jpg);
+  background-image: url(../img/combo-platter.jpg);
 }
 
 .box-3 {
@@ -84,6 +84,16 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .box-1 {
+    @include background-img-cntr();
+    background-image: url(../img/lunch-special-m.jpg);
+  }
+
+  .box-2 {
+    @include background-img-cntr();
+    background-image: url(../img/combo-platter-m.jpg);
+  }
+
   #menu {
     height: 280vh;
   }
