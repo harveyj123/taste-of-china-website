@@ -22,31 +22,52 @@
   height: 80%;
 }
 
+.about-us {
+  background-color: $primary-color-section;
+  color: $primary-text-color-light;
+  margin: 1rem;
+  width: 80%;
+  height: 50%;
+}
+
+.about-us-title {
+  height: 25%;
+  width: 100%;
+  @include flex-centering-row();
+  font-size: 5rem;
+}
+
+.about-us-content {
+  height: 75%;
+  width: 100%;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
 .contact-us {
   background-color: $primary-color-section;
+  color: $primary-text-color-light;
   @include flex-centering-column();
   margin: 1rem;
   width: 80%;
   height: 50%;
-  @include border();
 }
 
 .contact-us-title {
+  height: 25%;
   width: 100%;
   @include flex-centering-row();
   font-size: 5rem;
-  margin: 2rem;
 }
 .contact-us-content {
-  width: 100%;
-  font-size: 3rem;
-  padding: 1rem;
   @include flex-centering-row();
+  align-items: flex-start;
+  height: 75%;
+  width: 100%;
+  padding: 1rem;
 }
 
-.about-us {
+.contact-us-content-sub {
   margin: 1rem;
-  width: 80%;
-  height: 50%;
-  @include border();
+  font-size: 3rem;
 }

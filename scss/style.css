@@ -1121,8 +1121,43 @@
   height: 80%;
 }
 
+.about-us {
+  background-color: #b56262;
+  color: #ffffff;
+  margin: 1rem;
+  width: 80%;
+  height: 50%;
+}
+
+.about-us-title {
+  height: 25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 5rem;
+}
+
+.about-us-content {
+  height: 75%;
+  width: 100%;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
 .contact-us {
   background-color: #b56262;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,10 +1174,10 @@
   margin: 1rem;
   width: 80%;
   height: 50%;
-  border: 0.3rem solid lightblue;
 }
 
 .contact-us-title {
+  height: 25%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1158,13 +1193,9 @@
       -ms-flex-direction: row;
           flex-direction: row;
   font-size: 5rem;
-  margin: 2rem;
 }
 
 .contact-us-content {
-  width: 100%;
-  font-size: 3rem;
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1178,13 +1209,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 75%;
+  width: 100%;
+  padding: 1rem;
 }
 
-.about-us {
+.contact-us-content-sub {
   margin: 1rem;
-  width: 80%;
-  height: 50%;
-  border: 0.3rem solid lightblue;
+  font-size: 3rem;
 }
 
 html,
