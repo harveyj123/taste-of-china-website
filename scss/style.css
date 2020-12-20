@@ -886,15 +886,6 @@
     font-size: 5.3rem;
     width: 80%;
   }
-  .back-title {
-    font-size: 3rem;
-  }
-  .back-content {
-    font-size: 1.5rem;
-  }
-  .gallery-box-title {
-    font-size: 2.8rem;
-  }
   #gallery-container {
     height: 170vh;
   }
@@ -1057,15 +1048,6 @@
     height: 75%;
     width: 90%;
   }
-  .location-title {
-    font-size: 5rem;
-  }
-  .location-content-title {
-    font-size: 3rem;
-  }
-  .location-content-sub {
-    font-size: 1.5rem;
-  }
 }
 
 .contact-and-about-us-container {
@@ -1122,6 +1104,19 @@
 }
 
 .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #b56262;
   color: #ffffff;
   margin: 1rem;
@@ -1130,7 +1125,6 @@
 }
 
 .about-us-title {
-  height: 25%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1146,10 +1140,24 @@
       -ms-flex-direction: row;
           flex-direction: row;
   font-size: 5rem;
+  height: 25%;
 }
 
 .about-us-content {
-  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   width: 100%;
   font-size: 3rem;
   padding: 1rem;
@@ -1192,7 +1200,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-size: 5rem;
+  font-size: 6.5rem;
 }
 
 .contact-us-content {
@@ -1218,8 +1226,57 @@
 }
 
 .contact-us-content-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 80%;
+  width: 45%;
+  font-size: 5rem;
+}
+
+.h-main {
   margin: 1rem;
-  font-size: 3rem;
+}
+
+.h-main-1 {
+  font-size: 5rem;
+}
+
+.h-sub {
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .h-main-1 {
+    font-size: 3rem;
+  }
+  .about-us-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 20%;
+  }
 }
 
 html,
@@ -1230,5 +1287,13 @@ body,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+}
+
+@media only screen and (max-width: 800px) {
+  html,
+  body,
+  * {
+    font-size: 52.5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,102 @@
+.contact-and-about-us-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  @include flex-centering-row();
+}
+
+.contact-and-about-us-container::before {
+  content: "";
+  @include abs-pos-centering();
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(../img/info-background.jpg);
+  @include background-img-cntr();
+  opacity: 0.6;
+}
+
+.contact-and-about-us-inner-container {
+  @include flex-centering-column();
+  width: 90%;
+  height: 80%;
+}
+
+.about-us {
+  @include flex-centering-column();
+  background-color: $primary-color-section;
+  color: $primary-text-color-light;
+  margin: 1rem;
+  width: 80%;
+  height: 50%;
+}
+
+.about-us-title {
+  width: 100%;
+  @include flex-centering-row();
+  font-size: 5rem;
+  height: 25%;
+}
+
+.about-us-content {
+  @include flex-centering-column();
+  text-align: center;
+
+  width: 100%;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.contact-us {
+  background-color: $primary-color-section;
+  color: $primary-text-color-light;
+  @include flex-centering-column();
+  margin: 1rem;
+  width: 80%;
+  height: 50%;
+}
+
+.contact-us-title {
+  height: 25%;
+  width: 100%;
+  @include flex-centering-row();
+  font-size: 6.5rem;
+}
+.contact-us-content {
+  @include flex-centering-row();
+  align-items: flex-start;
+  height: 75%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.contact-us-content-sub {
+  @include flex-centering-column();
+  text-align: center;
+  height: 80%;
+  width: 45%;
+  font-size: 5rem;
+}
+
+.h-main {
+  margin: 1rem;
+}
+
+.h-main-1 {
+  font-size: 5rem;
+}
+
+.h-sub {
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .h-main-1 {
+    font-size: 3rem;
+  }
+
+  .about-us-title {
+    @include flex-centering-column();
+    height: 20%;
+  }
+}
