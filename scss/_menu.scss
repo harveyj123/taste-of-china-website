@@ -18,6 +18,18 @@
   width: 100%;
 }
 
+.menu-container-inner {
+  height: 40%;
+  width: 90%;
+  @include flex-centering-row();
+}
+
+.menu-container-inner-1 {
+  height: 40%;
+  width: 90%;
+  @include flex-centering-row();
+}
+
 .box-title {
   width: 100%;
   position: absolute;
@@ -38,14 +50,9 @@
   border-radius: 1rem;
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
 .menu-title-container {
   @include flex-centering-row();
-  height: 10vh;
+  height: 10%;
   width: 100%;
 }
 
@@ -95,30 +102,36 @@
   }
 
   #menu {
-    height: 280vh;
-  }
-
-  .break {
-    flex-basis: 0%;
-    height: 0;
+    height: 220vh;
   }
 
   .menu-container {
-    height: 90%;
+    height: 100%;
     flex-direction: column;
+  }
+
+  .menu-container-inner {
+    flex-direction: column;
+    height: 58%;
+  }
+
+  .menu-container-inner-1 {
+    flex-direction: column;
+    height: 38%;
   }
 
   .menu-box {
     flex-direction: row;
     width: 85%;
+    height: 20%;
   }
 
   .menu-title-container {
-    height: 20vh;
-    margin: 1.5rem;
+    margin: 3rem;
+    height: 6%;
   }
 
   .menu-title {
-    height: 60%;
+    height: 100%;
   }
 }

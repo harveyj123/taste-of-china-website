@@ -1,11 +1,11 @@
-.contact-and-about-us-container {
+#contact-and-about-us-container {
   position: relative;
   height: 100vh;
   width: 100vw;
   @include flex-centering-row();
 }
 
-.contact-and-about-us-container::before {
+#contact-and-about-us-container::before {
   content: "";
   @include abs-pos-centering();
   width: 100%;

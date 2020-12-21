@@ -5,6 +5,7 @@
 @import "./gallery";
 @import "./locations";
 @import "./contact-and-about-us";
+@import "./footer";
 
 html,
 body,
@@ -19,6 +20,14 @@ body,
   html,
   body,
   * {
-    font-size: 52.5%;
+    font-size: 50.5%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html,
+  body,
+  * {
+    font-size: 42.5%;
   }
 }

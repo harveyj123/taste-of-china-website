@@ -37,11 +37,10 @@
 
 .list-content {
   height: 100%;
-  font-size: 5rem;
+  font-size: 4rem;
   display: inline-block;
   padding: 0.8rem;
-  margin: auto 2rem;
-  overflow: hidden;
+  width: 15%;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -139,6 +138,7 @@
 
   .list-content {
     height: 8vh;
+    font-size: 6rem;
     width: 100%;
     margin: 1rem auto;
     @include flex-centering-column();
