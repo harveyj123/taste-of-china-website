@@ -91,6 +91,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  #contact-and-about-us-container::before {
+    background-image: url(../img/info-background-m.jpg);
+  }
+
   .h-main-1 {
     font-size: 3rem;
   }

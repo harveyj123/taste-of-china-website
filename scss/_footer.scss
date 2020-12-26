@@ -5,7 +5,7 @@
   @include flex-centering-column();
   height: 30vh;
   width: 100vw;
-  background-color: $primary-color-section;
+  background-color: $primary-color-nav;
 }
 
 .footer-inner-container {
@@ -77,7 +77,7 @@
 
 .list-link-f {
   text-decoration: none;
-  color: $primary-text-color-light;
+  color: $primary-color-light;
   height: 100%;
   width: 100%;
   @include flex-centering-column();

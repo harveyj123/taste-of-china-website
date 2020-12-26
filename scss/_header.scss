@@ -53,21 +53,3 @@
     font-size: 4rem;
   }
 }
-
-@media only screen and (max-width: 800px) {
-  .header-title-main {
-    font-size: 7rem;
-  }
-  .header-title-sub {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (max-width: 560px) {
-  .header-title-main {
-    font-size: 5rem;
-  }
-  .header-title-sub {
-    font-size: 2rem;
-  }
-}
