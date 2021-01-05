@@ -14,7 +14,7 @@
   @include flex-centering-row();
   position: relative;
   flex-wrap: wrap;
-  height: 82%;
+  height: 85%;
   width: 100%;
 }
 
@@ -51,8 +51,8 @@
 }
 
 .menu-title-container {
-  @include flex-centering-row();
-  height: 10%;
+  @include flex-centering-column();
+  height: 15%;
   width: 100%;
 }
 
@@ -61,7 +61,7 @@
   @include flex-centering-column();
   font-size: 5rem;
   width: 80%;
-  height: 100%;
+  height: 70%;
   border-radius: 1rem;
 }
 
