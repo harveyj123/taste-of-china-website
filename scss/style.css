@@ -1,21 +1,19 @@
 .popup-title {
   text-align: center;
   font-size: 6rem;
+  height: 12%;
+  margin: 2rem;
 }
 
 .popup-text {
-  width: 50%;
-  height: 68%;
+  width: 80%;
+  height: 88%;
   position: absolute;
-  top: 50%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-left: 13rem;
   font-size: 5rem;
 }
 
 .popup-content-container {
-  padding: 3rem;
   overflow: auto;
   position: absolute;
   top: 50%;
