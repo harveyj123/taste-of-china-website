@@ -14,18 +14,18 @@
   @include flex-centering-row();
   position: relative;
   flex-wrap: wrap;
-  height: 85%;
+  height: 80%;
   width: 100%;
 }
 
 .menu-container-inner {
-  height: 40%;
+  height: 50%;
   width: 90%;
   @include flex-centering-row();
 }
 
 .menu-container-inner-1 {
-  height: 40%;
+  height: 50%;
   width: 90%;
   @include flex-centering-row();
 }
@@ -39,12 +39,13 @@
   color: $primary-text-color-light;
   padding: 0.5rem;
   font-size: 3rem;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .menu-box,
 .menu-box:focus {
   position: relative;
-  margin: 1rem;
+  margin: 0 1rem;
   height: 38vh;
   flex: 1;
   border-radius: 1rem;

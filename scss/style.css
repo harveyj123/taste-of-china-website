@@ -4,6 +4,13 @@
 }
 
 .popup-text {
+  width: 50%;
+  height: 68%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 5rem;
 }
 
@@ -102,12 +109,12 @@
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 85%;
+  height: 80%;
   width: 100%;
 }
 
 .menu-container-inner {
-  height: 40%;
+  height: 50%;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,7 +132,7 @@
 }
 
 .menu-container-inner-1 {
-  height: 40%;
+  height: 50%;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,12 +158,13 @@
   color: #ffffff;
   padding: 0.5rem;
   font-size: 3rem;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .menu-box,
 .menu-box:focus {
   position: relative;
-  margin: 1rem;
+  margin: 0 1rem;
   height: 38vh;
   -webkit-box-flex: 1;
       -ms-flex: 1;

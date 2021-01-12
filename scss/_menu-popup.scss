@@ -7,6 +7,12 @@
 }
 
 .popup-text {
+  width: 50%;
+  height: 68%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
   font-size: 5rem;
 }
 
