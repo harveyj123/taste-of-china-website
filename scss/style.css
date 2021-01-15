@@ -250,6 +250,16 @@
     background-position: center;
     background-image: url(../img/combo-platter-m.jpg);
   }
+  .box-4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/menu-sides-m.jpg);
+  }
+  .box-5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/menu-specials-m.jpg);
+  }
   #menu {
     height: 220vh;
   }
@@ -848,7 +858,7 @@
             backface-visibility: hidden;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/general-tso-chichen-m.jpg);
+    background-image: url(../img/general-tso-chichen.jpg);
   }
   .gallery-box-2 {
     text-align: center;
