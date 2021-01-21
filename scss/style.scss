@@ -31,3 +31,11 @@ body,
     font-size: 40.5%;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  html,
+  body,
+  * {
+    font-size: 32.5%;
+  }
+}
